@@ -14,8 +14,7 @@ public class App
     {
         ApplicationContext context= new AnnotationConfigApplicationContext(MyConfiguration.class);
         Student student= context.getBean(Student.class);
-
-
+        System.out.println("Roll Number"+ student.getRno());
         student.write_exam();
         System.out.println( "Hello World!" );
     }
